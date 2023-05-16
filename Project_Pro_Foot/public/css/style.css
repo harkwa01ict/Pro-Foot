@@ -1,0 +1,52 @@
+header{
+    background-image: url('../images/bg_header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+.logo div p{
+    color: rgb(87, 87, 240);
+    font-size: 50px;
+    border-bottom: 3px groove ;
+}
+.logo div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo div span{
+    align-self: flex-end;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+.angi{
+  overflow: hidden;
+  width: 800px;
+  height: 400px;
+  margin-left: 25%;
+}
+.bgmain{
+    background-image: url('../images/bghomepage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pdancing{
+   gap: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.signup{
+    margin-left: 30%;
+    border: 2px solid rgb(127, 127, 221);
+    width: 500px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(89, 183, 187);
+    border-radius: 20px;
+}
