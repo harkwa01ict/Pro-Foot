@@ -107,10 +107,10 @@
                       <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">Log In</a>
+                        <a class="nav-link" href="{{route('route_login')}}">Log In</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link">Sign Up</a>
+                        <a class="nav-link" href="{{route('route_signup')}}">Sign Up</a>
                     </li>
                   </ul>
             </nav>
