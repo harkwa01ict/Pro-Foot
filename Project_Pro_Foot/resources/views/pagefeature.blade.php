@@ -16,7 +16,7 @@
   
     <header class="d-flex container-fluid justify-content-between p-3">
         <div class="logo">
-            <img src="{{asset('images/favicone.jpg')}}" alt="" width="100" height="100">
+            <a href="{{route('route_homepage')}}"><img src="{{asset('images/favicone.jpg')}}" alt="" width="100" height="100"></a>
             <div>
             <p>PRO-FOOT</p>
             <span>Be Close To The Ball.</span>
@@ -32,17 +32,29 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
                   </li>
+                  @guest
                   <li class="nav-item">
-                    <a class="nav-link">Log In</a>
+                    <a class="nav-link" href="{{route('route_login')}}">Log In</a>
                   </li>
+                  @endguest
                   <li class="nav-item">
-                    <a class="nav-link">Sign Up</a>
+                    <a class="nav-link" href="{{route('route_signup')}}">Sign Up</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn bg-dark-subtle btn-outline-primary" type="submit">Search</button>
                 </form>
+                <div class="fs-5 d-flex flex-column justify-content-center align-items-end">
+                    @auth
+                        <p>{{Illuminate\Support\Facades\Auth::user()->firstname}} {{Illuminate\Support\Facades\Auth::user()->lastname}}</p>
+                        <form action="{{route('route_logout')}}" method="POST" class="">
+                            @csrf
+                            @method('delete')
+                            <button type="submit" class="btn btn-primary mb-3">Log Out</button>
+                        </form>
+                    @endauth
+                </div>
               </div>
             </div>
           </nav>

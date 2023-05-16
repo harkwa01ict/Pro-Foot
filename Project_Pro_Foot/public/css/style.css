@@ -26,9 +26,7 @@ header{
   overflow: hidden;
   width: 800px;
   height: 400px;
-  left:  30%;
-  top: 10%;
- 
+  margin-left: 25%;
 }
 .bgmain{
     background-image: url('../images/bghomepage.jpg');
@@ -36,4 +34,19 @@ header{
     background-size: cover;
     background-position: center;
 }
-   
+.pdancing{
+   gap: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.signup{
+    margin-left: 30%;
+    border: 2px solid rgb(127, 127, 221);
+    width: 500px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(89, 183, 187);
+    border-radius: 20px;
+}
