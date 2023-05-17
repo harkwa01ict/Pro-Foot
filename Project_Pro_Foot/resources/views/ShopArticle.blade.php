@@ -1,5 +1,32 @@
 @extends('pagefeature');
 
+
+@section('categories')
+<nav class="navbar-expand-lg d-flex justify-content-center ">
+    <ul class="navbar-nav fs-5 gap-5">
+        <li class="nav-item">
+          <a class="nav-link" href="">T_Shirt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Shuhe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Short</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">ball</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Kit</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link">Ensemble</a>
+        </li>
+
+      </ul>
+</nav>
+@endsection
+
 @section('content')
 <section class="p-5">
     <div class="d-flex offset-md-3 mt-5 gap-5">

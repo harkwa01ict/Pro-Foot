@@ -14,7 +14,8 @@
 </head>
 <body>
   
-    <header class="d-flex container-fluid justify-content-between p-3">
+    <header>
+      <section class="d-flex container-fluid justify-content-between p-3">
         <div class="logo">
             <a href="{{route('route_homepage')}}"><img src="{{asset('images/favicone.jpg')}}" alt="" width="100" height="100"></a>
             <div>
@@ -58,7 +59,10 @@
               </div>
             </div>
           </nav>
-          
+      </section>
+      <section>
+        @yield('categories')
+      </section>    
     </header>
     
     <main class="d-flex bgmain">
