@@ -11,17 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
-    Schema::create('tb_news', function (Blueprint $table) {
-        $table->bigIncrements('id');
-        $table->string('type');
-        $table->date('date_of_issuance');
-        $table->text('description');
-        $table->timestamps();
-    });
-
-
-        //
+        Schema::create('tb_news_models', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('type');
+            $table->date('date_of_issuance');
+            $table->longtext('description');
+             
+            $table->timestamps();
+        });
     }
 
     /**
@@ -29,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('tb_news_models');
     }
 };

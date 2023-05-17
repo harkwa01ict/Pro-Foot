@@ -50,3 +50,22 @@ header{
     background-color: rgb(89, 183, 187);
     border-radius: 20px;
 }
+
+/** ==============================================================*/
+.newsForm{
+   
+    margin-left: 30%;
+    border: 2px solid rgb(127, 127, 221);
+    width: 500px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(89, 183, 187);
+    border-radius: 20px;
+
+}
+
+#newsSubmit{
+ color: rgb(87, 87, 240) ;
+ background-color: transparent;
+}

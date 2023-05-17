@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\signupController;
+use App\Http\Controllers\TbNewsController;
 use App\Http\Controllers\ProfootController;
 
 /*
@@ -25,3 +26,9 @@ Route::post('/home/signup', [signupController::class, 'store']);
 Route::get('/home/login', [loginController::class, 'get_route'])->name('route_login');
 Route::post('/home/login', [loginController::class, 'login']);
 Route::delete('/home/logout', [loginController::class, 'logout'])->name('route_logout');
+//Route::get('/home/news', [TbNewsController::class, 'news_index']);
+
+
+Route::get('/home/news', [TbNewsController::class, 'news_index'])->name('route_store');
+Route::post('/home/news', [TbNewsController::class, 'store']);
+
