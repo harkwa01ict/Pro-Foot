@@ -25,3 +25,6 @@ Route::post('/home/signup', [signupController::class, 'store']);
 Route::get('/home/login', [loginController::class, 'get_route'])->name('route_login');
 Route::post('/home/login', [loginController::class, 'login']);
 Route::delete('/home/logout', [loginController::class, 'logout'])->name('route_logout');
+
+Route::get('/home/shop', [ProfootController::class, 'Shop_page'])->name('route_toshop');
+Route::get('/home/shop/article/{id}', [ProfootController::class, 'shopArticle'])->name('route_toshoparticle');

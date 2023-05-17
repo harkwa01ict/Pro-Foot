@@ -27,7 +27,7 @@
               <div class="collapse navbar-collapse gap-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
@@ -65,7 +65,7 @@
         <nav class="bg-success-subtle p-3">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Ticket</a>
@@ -101,7 +101,7 @@
                 <h3>Links</h3>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Shop</a>
+                      <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">About Us</a>
