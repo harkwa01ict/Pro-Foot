@@ -16,5 +16,6 @@
             <input type="submit" class="btn btn-lg" name="submit" value="LOGIN">
         </div>
     </form>
+    <p>You don't have an account: <a href="{{route('route_signup')}}">Sign Up</a></p>
 </section>
 @endsection
