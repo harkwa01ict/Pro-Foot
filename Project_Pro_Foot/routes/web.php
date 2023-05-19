@@ -5,6 +5,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\TbNewsController;
 use App\Http\Controllers\ProfootController;
+use App\Http\Controllers\TbadminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +33,9 @@ Route::delete('/home/logout', [loginController::class, 'logout'])->name('route_l
 Route::get('/home/news', [TbNewsController::class, 'news_index'])->name('route_store');
 Route::post('/home/news', [TbNewsController::class, 'store']);
 
+
+//Route::get('/home/news/admin', [TbadminController::class, 'News_index'])->name('route_store');
+//Route::post('/home/news/admin', [TbadminController::class, 'store']);
+
+Route::get('/home/news/admin', [TbadminController::class, 'News_index'])->name('route_store1');
+Route::post('/home/news/admin', [TbadminController::class, 'store']);

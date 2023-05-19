@@ -74,7 +74,7 @@
                   <a class="nav-link">Club Activities</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">News</a>
+                  <a class="nav-link" href="{{route('route_store')}}" >News</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Restaurant</a>

@@ -4,52 +4,26 @@
         under the section of the content--}}
     @section('content')
 
+{{-- here we will make our news more beautiful --}}
+<a href="/home/news/news_index.blade.php"></a>
         <div>
             @foreach ($news as $item)
-                <div>
-                    <h3>{{ $item->type }}</h3>
-                    <p>Date: {{ $item->date_of_issuance }}</p>
-                    <p>{{ $item->description }}</p>
-                </div>
+                <section class="newscard" >
+                    <div class="card" style="width: 30rem;">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>{{ $item->type }}</strong></h5>
+                         
+                          <p class="card-text">{{ $item->description }}</p>
+                          <p>Date: {{ $item->date_of_issuance }}</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </section>
+                
             @endforeach
         </div>
 
-            <!--Here starts the News form -->
+        
 
-        <div>
-            <h2>Add News</h2>
-
-                <section class="d-flex justify-content-between flex-wrap pdancing p-5">
-                    <form class="newsForm" action="" method="POST">
-                        @csrf
-            
-                        <div class="mb-3">
-                            <label for="type">Type:</label>
-                            <input type="text" name="type" id="type" required>
-                        </div>
-            
-                        <div class="mb-3">
-                            <label for="date_of_issuance">Date of Issuance:</label>
-                            <input type="date" name="date_of_issuance" id="date_of_issuance" required>
-                        </div>
-            
-                        <div class="mb-3">
-                            <label for="description">Description:</label>
-                            <textarea name="description" id="description" rows="3" required></textarea>
-                        </div>
-            
-                       <!-- <div>
-                            <button class="btn  btn-lg" name="submit" type="submit">Submit</button>
-                        </div> -->
-                    
-                        <div class="mb-3">
-                            <input type="submit" class="btn btn-lg" name="submit" value="SUBMIT">
-                        </div>
-            
-
-                    </form>
-                </section>
-            
-        </div>
-  
     @endsection

@@ -23,6 +23,7 @@ class TbNewsController extends Controller
             'date_of_issuance' => 'required',
             'description' => 'required',
         ]);
+        
 
         
        $user = TbNews_model::create([

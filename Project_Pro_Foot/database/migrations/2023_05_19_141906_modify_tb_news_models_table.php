@@ -11,24 +11,25 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tb_news_models', function (Blueprint $table) {
-            $table->bigIncrements('id');
-           
-            $table->string('type');            
+        Schema::table('tb_news_models', function (Blueprint $table) {
+            //
+            $table->enum('type', ['Breaking_News', 'Regular_News'])->default('Regular_News')->change();
 
-            $table->date('date_of_issuance');
-            $table->longtext('description');
-             
-            $table->timestamps();
         });
     }
-    
 
     /**
      * Reverse the migrations.
      */
+
+     
+
     public function down(): void
     {
-        Schema::dropIfExists('tb_news_models');
+        Schema::table('tb_news_models', function (Blueprint $table) {
+            //
+            $table->string('type')->change();
+
+        });
     }
 };
