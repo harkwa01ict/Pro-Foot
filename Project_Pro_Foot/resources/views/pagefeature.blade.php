@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('css/restaurant.css')}}">
 </head>
 <body>
   
@@ -81,7 +82,7 @@
                   <a class="nav-link">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Restaurant</a>
+                    <a class="nav-link" href="{{route('route_restaurantpage')}}">Restaurant</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Careers</a>

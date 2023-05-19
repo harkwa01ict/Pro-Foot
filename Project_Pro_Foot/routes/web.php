@@ -29,3 +29,5 @@ Route::delete('/home/logout', [loginController::class, 'logout'])->name('route_l
 Route::get('/home/shop', [ProfootController::class, 'Shop_page'])->name('route_toshop');
 Route::get('/home/shop/article/{id}', [ProfootController::class, 'shopArticle'])->name('route_toshoparticle');
 Route::get('/home/shop/category/{id}', [ProfootController::class, 'shopCategory'])->name('route_toshopCategory');
+
+Route::get('/home/restaurant', [ProfootController::class, 'Restaurant_page'])->name('route_restaurantpage');

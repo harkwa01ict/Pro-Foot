@@ -38,4 +38,11 @@ class ProfootController extends Controller
       return view('ShopCategories', compact('shopcategories'));
 
      }
+
+
+     //this is the restaurant controller
+
+     function Restaurant_page(){
+      return view('Restaurant');
+     }
 }

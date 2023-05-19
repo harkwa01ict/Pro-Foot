@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+.container{
+    width: 85%;
+    margin: 50px auto;
+    text-align:center;
+
+}
+.title h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-bottom:20px;
+    color: white;
+
+}
+.title p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #401e3d;
+    margin-bottom: 20px;
+    width:60%;
+    margin:0px auto 20px auto;
+}
+.list{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.list li{
+    margin: 0px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative ;
+    
+}
+.list li::after{
+    content:"";
+    position: absolute;
+    bottom: -5px;
+    width:0%;
+    background: #d4a373;
+    height:2px;
+    left:50%;
+    transition: .3s ease-in-out;
+}
+.list li:hover::after{
+    width: 100%;
+    left:0;
+     
+}
+.list li.active{
+    color:#d4a373;
+    transition: .3s ease-in-out;
+}
+
+
+.content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width:32%;
+    padding:10px;
+    box-shadow: rgba(0, 0, 0, 0.05) Opx 0px 0px 1px;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+    animation: displayable 1s ease-in-out ;
+}
+.box .image{
+    width:35%;   
+}
+.image img{
+    width: 100%;
+}
+.box .text{
+    width: 60%;
+    text-align: left;
+}
+.text h3{
+    font-size: 18px;
+}
+.text hr{
+    height:2px;
+    background:#d4a373;
+    width:50px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.text section{
+    font-weight: 600;
+    font-size: 17px;
+  
+}
+.text i {
+    color:#d4a373;
+    font-size: 13px;
+}
+.text article{
+    font-size:14px;
+}
+@keyframes displayable{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
