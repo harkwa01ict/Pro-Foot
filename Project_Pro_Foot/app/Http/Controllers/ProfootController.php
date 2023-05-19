@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ShopModel;
+use App\Models\categories;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,7 +16,7 @@ class ProfootController extends Controller
    function Shop_page(){
 
       //$produits = ShopModel::All();
-      $produits = ShopModel::inRandomOrder()->get();
+      $produits = ShopModel::inRandomOrder()->paginate(9);
       //dd($produits);
       return view('Shop', compact('produits'));
      }
@@ -25,7 +26,16 @@ class ProfootController extends Controller
       $produits = ShopModel::find($request->id);
       //dd($produits);
       $articleexpo = ShopModel::inRandomOrder()->limit(3)->get();
-      return view('ShopArticle', compact('produits'), compact('articleexpo'));
+      //$categories = categories::where('is_online', 1)->get();
+      //dd($categories);
+      return view('ShopArticle', compact('produits', 'articleexpo'));
+
+     }
+
+     function shopCategory(Request $request){
+       
+     $shopcategories = ShopModel::where('category_id', $request->id)->paginate(9);
+      return view('ShopCategories', compact('shopcategories'));
 
      }
 }

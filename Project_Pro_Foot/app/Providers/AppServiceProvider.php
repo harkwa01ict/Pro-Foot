@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+use App\Http\ViewComposers\CategoriesComposer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +21,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Paginator::useBootstrapFive();
+        Paginator::useBootstrapFour();
+
+        view()->composer(
+            ['Shop', 'ShopArticle', 'ShopCategories'],
+            CategoriesComposer::class);
     }
 }

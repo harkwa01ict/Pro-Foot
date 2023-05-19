@@ -19,6 +19,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/ball1.jpg";
         $produit->category = "ball";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new ShopModel();
@@ -27,6 +28,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/ball2.jpg";
         $produit->category = "ball";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new ShopModel();
@@ -35,6 +37,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/ball3.jpg";
         $produit->category = "ball";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 4;
         $produit->save();
 
         $produit = new ShopModel();
@@ -43,6 +46,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit1.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -51,6 +55,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit2.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -59,6 +64,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit3.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -67,6 +73,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit4.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -75,6 +82,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit5.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -83,6 +91,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/Tshit6.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -91,6 +100,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/tshit7.jpg";
         $produit->category = "T_Shirt";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 1;
         $produit->save();
 
         $produit = new ShopModel();
@@ -99,6 +109,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/schuhe1.jpg";
         $produit->category = "Shuhe";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new ShopModel();
@@ -107,6 +118,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/schuhe2.jpg";
         $produit->category = "Shuhe";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new ShopModel();
@@ -115,6 +127,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/schuhe3.jpg";
         $produit->category = "Shuhe";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new ShopModel();
@@ -123,6 +136,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/schuhe4.jpg";
         $produit->category = "Shuhe";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 2;
         $produit->save();
 
         $produit = new ShopModel();
@@ -131,6 +145,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/short1.jpg";
         $produit->category = "Schort";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 3;
         $produit->save();
 
         $produit = new ShopModel();
@@ -139,6 +154,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/short2.jpg";
         $produit->category = "Schort";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 3;
         $produit->save();
 
         $produit = new ShopModel();
@@ -147,6 +163,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/ensemble1.jpg";
         $produit->category = "Ensemble";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new ShopModel();
@@ -155,6 +172,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/ensemble2.jpg";
         $produit->category = "Ensemble";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 6;
         $produit->save();
 
         $produit = new ShopModel();
@@ -163,6 +181,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/kit1.jpg";
         $produit->category = "Kit";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 5;
         $produit->save();
 
         $produit = new ShopModel();
@@ -171,6 +190,7 @@ class ShopSeeder extends Seeder
         $produit->image = "imageShop/kit2.jpg";
         $produit->category = "Kit";
         $produit->description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. but also the leap into electronic typesetting. remaining essentially unchanged. It was popularised in";
+        $produit->category_id = 5;
         $produit->save();
     }
 }

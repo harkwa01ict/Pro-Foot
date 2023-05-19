@@ -4,25 +4,11 @@
 @section('categories')
 <nav class="navbar-expand-lg d-flex justify-content-center ">
     <ul class="navbar-nav fs-5 gap-5">
+        @foreach ($categories as $category)
         <li class="nav-item">
-          <a class="nav-link" href="">T_Shirt</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Shuhe</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Short</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">ball</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Kit</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link">Ensemble</a>
-        </li>
-
+            <a class="nav-link" href="{{route('route_toshopCategory', ['id'=>$category->id])}}">{{$category->category}}</a>
+          </li>
+        @endforeach
       </ul>
 </nav>
 @endsection
