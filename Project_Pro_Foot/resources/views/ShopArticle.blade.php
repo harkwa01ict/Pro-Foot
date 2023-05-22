@@ -29,17 +29,40 @@
         </div>
         <div class="text-white">
             <p>{{$produits->description}}</p>
-            <label for="nombre">Nombre d'article : </label>
-            <input type="number" name="nombre">
         </div>
       </div>
       <div class="mt-5 ms-3 p-3 d-flex row justify-content-between">
-        <div>
-          <button>ajouter au panier</button>
+        <div class="p-3">
+            <form action="{{route('route_toshopaddpanier', ['id'=>$produits->id])}}" method="POST" id="addpanier">
+                @csrf
+                <label for="nombre" class="text-white">Nombre d'article : </label>
+                <input type="number" name="nombre" min="1">
+                <br><br>
+                <label for="taille" class="text-white">Taille : </label>
+                <select class="form-select" aria-label="Default select example" name="taille">
+                    <option value="xx-l">xx-l</option>
+                    <option value="xl">xl</option>
+                    <option value="l">l</option>
+                    <option value="m">m</option>
+                    <option value="s">s</option>
+                    <option value="xs">xs</option>
+                    <option value="xx-s">xx-s</option>
+                </select>
+                <br>
+                <label for="couleur" class="text-white">couleur : </label>
+                <select class="form-select" aria-label="Default select example" name="couleur">
+                    <option value="blue">Blue</option>
+                    <option value="red">red</option>
+                    <option value="black">Black</option>
+                    <option value="white">white</option>
+                    <option value="green">green</option>
+                    <option value="yellow">yellow</option>
+                    <option value="orange">orange</option>
+                    <option value="pink">pink</option>
+                </select>
+            </form>
         </div>
-        <div>
-          <button class="bg-primary">valider la commande</button>
-        </div>
+          <button class="" type="submit" form="addpanier"><i class="fa-solid fa-cart-shopping"></i> <br> ajouter au panier</button>
       </div>
     </div>
       <div class="d-flex gap-3 mt-5 p-5">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\PanierController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\ProfootController;
 
@@ -31,3 +32,6 @@ Route::get('/home/shop/article/{id}', [ProfootController::class, 'shopArticle'])
 Route::get('/home/shop/category/{id}', [ProfootController::class, 'shopCategory'])->name('route_toshopCategory');
 
 Route::get('/home/restaurant', [ProfootController::class, 'Restaurant_page'])->name('route_restaurantpage');
+
+Route::post('/home/shop/panier/add/{id}', [PanierController::class, 'add'])->name('route_toshopaddpanier');
+Route::get('/home/shop/panier', [PanierController::class, 'get_content'])->name('route_toshoppanier');
