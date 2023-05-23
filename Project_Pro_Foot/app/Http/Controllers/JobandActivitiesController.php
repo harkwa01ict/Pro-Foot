@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Models\jobModel;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class JobandActivitiesController extends Controller
 {
-    function get_jod_view(){
-        return view ('job');
+    function get_job_view(){
+        $jobs = jobModel::All();
+        return view ('job', compact('jobs'));
     }
 }
