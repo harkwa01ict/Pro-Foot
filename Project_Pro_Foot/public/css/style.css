@@ -92,16 +92,29 @@ header{
 
 #adminform{
 
-    position: fixed;
-    top: 20%;
-    right: 30%;
-    width: 300px;
-     
+    color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+
+    margin-left: 800px;
+    
+
+    /*position: absolute;*/
+    
+ 
+    
+  
+
+    background-color: transparent;
+    
 }
 .titleAdmin{
     color: white;
     position: fixed;
     top: 20%;
-    right: 38%;
-  
+    right: 30%;
+    width: 600px;
+    z-index: 10;
+     
 }

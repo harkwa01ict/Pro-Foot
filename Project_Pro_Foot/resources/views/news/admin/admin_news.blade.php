@@ -24,8 +24,8 @@
 
                        
                              <a href="#" class="btn btn-primary">Edit</a>
-                            <a href="#" class="btn btn-primary">Update</a>
-                            <a href="#" class="btn btn-primary">Delete</a>                          
+                           <!-- <a href="#" class="btn btn-primary">Update</a>-->
+                            <a href="./delete_adm_news.blade.php" class="btn btn-primary">Delete</a>                          
                      </div>
                  </div>
               </section>

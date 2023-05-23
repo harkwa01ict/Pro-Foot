@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\deleteController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\TbNewsController;
 use App\Http\Controllers\ProfootController;
@@ -40,8 +41,16 @@ Route::post('/home/news', [TbNewsController::class, 'store']);
 Route::get('/home/news/admin', [TbadminController::class, 'News_index'])->name('route_store1');
 Route::post('/home/news/admin', [TbadminController::class, 'store']);
 
-//Route::get('/home/news', [TbNewsController::class, 'showFilteredNews'])->name('route_store2');
 
-//Route::get('/home/news/', [TbNewsController::class, 'eachlist'])->name('route_eachnews');
-//Route::post('/home/news/', [TbNewsController::class, 'eachlist']);
 
+Route::get('/home/news/admin', [TbadminController::class, 'News_index'])->name('route_store1');
+
+
+//********************************* */
+
+Route::get('home/news/admin/delete_adm_news/{id}', [deleteController::class,'destroy'])->name('news.destroy');
+
+Route::delete('home/news/admin/delete_adm_news/{id}', [deleteController::class,'destroy'])->name('news.destroy');
+
+
+//*************************************** */
