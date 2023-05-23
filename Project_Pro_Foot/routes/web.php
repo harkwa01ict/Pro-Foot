@@ -5,6 +5,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\PanierController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\ProfootController;
+use App\Http\Controllers\JobandActivitiesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,3 +36,5 @@ Route::get('/home/restaurant', [ProfootController::class, 'Restaurant_page'])->n
 
 Route::post('/home/shop/panier/add/{id}', [PanierController::class, 'add'])->name('route_toshopaddpanier');
 Route::get('/home/shop/panier', [PanierController::class, 'get_content'])->name('route_toshoppanier');
+
+Route::get('/home/job', [JobandActivitiesController::class, 'get_jod_view'])->name('route_jobpage');
