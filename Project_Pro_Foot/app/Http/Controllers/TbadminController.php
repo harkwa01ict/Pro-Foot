@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TbNews_model;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\TbadminController;
 
@@ -10,9 +12,9 @@ class TbadminController extends Controller
 {
      public function News_index()
 {
+    $news = TbNews_model::all();
 
-
-return view('news.admin.admin_news');
+return view('news.admin.admin_news',compact('news'));
 }
 
 public function store(Request $request)
@@ -23,6 +25,7 @@ public function store(Request $request)
         'description' => 'required',
     ]);
     
+   
 
     
    $user = TbNews_model::create([
@@ -32,6 +35,8 @@ public function store(Request $request)
 
 ]);
 $user->save();
+   
+
 
 return redirect()->route('route_store1')->with('success', 'News added successfully!');
 }

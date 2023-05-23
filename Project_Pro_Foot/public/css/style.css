@@ -89,3 +89,19 @@ header{
     background-color: rgb(89, 183, 187);
     border-radius: 20px;
 }
+
+#adminform{
+
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    width: 300px;
+     
+}
+.titleAdmin{
+    color: white;
+    position: fixed;
+    top: 20%;
+    right: 38%;
+  
+}

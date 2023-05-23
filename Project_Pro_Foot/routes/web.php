@@ -39,3 +39,9 @@ Route::post('/home/news', [TbNewsController::class, 'store']);
 
 Route::get('/home/news/admin', [TbadminController::class, 'News_index'])->name('route_store1');
 Route::post('/home/news/admin', [TbadminController::class, 'store']);
+
+//Route::get('/home/news', [TbNewsController::class, 'showFilteredNews'])->name('route_store2');
+
+//Route::get('/home/news/', [TbNewsController::class, 'eachlist'])->name('route_eachnews');
+//Route::post('/home/news/', [TbNewsController::class, 'eachlist']);
+

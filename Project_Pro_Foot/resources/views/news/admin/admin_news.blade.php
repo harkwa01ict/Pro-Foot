@@ -5,19 +5,44 @@
     @section('content')
 
         <div>
-            <h1>You Entered To Admin Page</h1>
-            <h2>Add News</h2>
-            <div class="newsFormParent">
+
+            
+            <h1 class="titleAdmin">You Entered To Admin Page</h1>
+                                   
+
+
+
+             @foreach ($news as $item)
+             <section class="newscard" >
+                 <div class="card" style="width: 30rem;">
+                     <div class="card-body">
+                      
+                     <h5 class="card-title"><strong>{{ $item->type }}</strong></h5>
+                      
+                       <p class="card-text">{{Str::limit($item->description,'17')  }}</p>
+                       <p>Date: {{ $item->date_of_issuance }}</p>
+
+                       
+                             <a href="#" class="btn btn-primary">Edit</a>
+                            <a href="#" class="btn btn-primary">Update</a>
+                            <a href="#" class="btn btn-primary">Delete</a>                          
+                     </div>
+                 </div>
+              </section>
+              
+           @endforeach
+
+            <div class="newsFormParent" id="adminform">
                 <section class="d-flex justify-content-between flex-wrap pdancing p-5">
-                    
+                   
                     <form class="newsForm" action="" method="POST">
                         @csrf
-            
+                        <h2>Add News</h2>
                         <div class="mb-3">
-                            <select  class="" >
+                            <select  class=""  name="type">
                                 <option selected>Make your Choice</option>
-                                <option value="News1">Breaking News</option>
-                                <option value="News2">Regular News</option>
+                                <option value="Breaking News">Breaking News</option>
+                                <option value="Regular News">Regular News</option>
                               
                               </select>
                                
@@ -50,6 +75,7 @@
                     </form>
                 </section>
             </div>
+           
                 
             
         </div>
