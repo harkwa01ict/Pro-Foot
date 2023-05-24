@@ -2,21 +2,15 @@
 
 @section('content')
 <div class="jobs-list-container">
-    <h2>  6 jobs </h2>
-   
-        <div class="jobs">
-            @foreach ($jobs as $job)
             <div class="job">
-                <img src="{{asset($job->image)}}" alt="">
+                <img src="{{asset($job->image)}}" alt="" width="300">
                 <h3 class="job-title">{{$job->name}}</h3>
                 <div class="details">
-                    {{$job->description}}
+                    {{$job->content}}
                 </div>
-                <a href="{{route('route_toreadmore', ['id'=>$job->id])}}" class="details-btn">More Details</a>
+                <a href="{{route('route_login')}}" class="details-btn">apply now</a>
                 <span class="open-positions">{{$job->openpost}} open positions</span>
             </div>
-        @endforeach
-    </div>         
 </div>
 
 @endsection

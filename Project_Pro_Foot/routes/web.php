@@ -38,3 +38,5 @@ Route::post('/home/shop/panier/add/{id}', [PanierController::class, 'add'])->nam
 Route::get('/home/shop/panier', [PanierController::class, 'get_content'])->name('route_toshoppanier');
 
 Route::get('/home/job', [JobandActivitiesController::class, 'get_job_view'])->name('route_jobpage');
+Route::get('/home/jobs/job/{id}', [JobandActivitiesController::class, 'read_more'])->name('route_toreadmore');
+Route::get('/home/activities', [JobandActivitiesController::class, 'get_activities_view'])->name('route_activities');

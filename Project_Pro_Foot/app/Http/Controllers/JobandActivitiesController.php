@@ -12,4 +12,18 @@ class JobandActivitiesController extends Controller
         $jobs = jobModel::All();
         return view ('job', compact('jobs'));
     }
+
+    function read_more(Request $request){
+       
+        $job = jobModel::find($request->id);
+        
+        return view('jobdetail', compact('job'));
+  
+       }
+
+       function get_activities_view(){
+       
+        return view ('activities');
+    }
+
 }

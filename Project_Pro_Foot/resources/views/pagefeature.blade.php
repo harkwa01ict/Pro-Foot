@@ -78,7 +78,7 @@
                   <a class="nav-link" href="#">Ticket</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Club Activities</a>
+                  <a class="nav-link" href="{{route('route_activities')}}">Club Activities</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link">News</a>
