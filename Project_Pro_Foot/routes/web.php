@@ -6,6 +6,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\deleteController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\TbNewsController;
+use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\ProfootController;
 use App\Http\Controllers\TbadminController;
 
@@ -67,4 +68,6 @@ Route::post('/home/news/admin/edit_news/{id}', [TbNewsController::class, 'update
 
 Route::delete('/home/news/admin/edit_news/{id}', [TbNewsController::class, 'destroy'])->name('route_store5');
 
+
+Route::get('/home/news/about', [AboutusController::class, 'aboutUs'])->name('route_aboutUs');
 

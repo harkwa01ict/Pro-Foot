@@ -6,12 +6,6 @@
 
         <div>
 
-            
-            <h1 class="titleAdmin">You Entered To Admin Page</h1>
-                                   
-
-
-
              @foreach ($news as $item)
              <section class="newscard" >
                  <div class="card" style="width: 30rem;">

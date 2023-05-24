@@ -95,7 +95,8 @@
         <div class="d-flex justify-content-around p-4 bg-success-subtle">
             <div>
                 <h3>Privacy Policy</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. Reiciendis, maiores?</p>
+                <p> The company is currently working in the Policy and will populate the latest soon <br>
+                  We are sorry for this inconvenience.</p>
             </div>
             <nav>
                 <h3>Links</h3>
@@ -116,9 +117,29 @@
             </nav>
             <nav>
                 <h3>Sponsors</h3>
+
+                
             </nav>
             <nav>
                 <h3>Contact Us</h3>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                  <li class="nav-item">
+                    Pro-Foot
+                  </li>
+                  <li class="nav-item">
+                     2, rue de la Paix
+                  </li>
+                  <li class="nav-item">
+                     Luxembourg
+                  </li>
+                  <li class="nav-item">
+                    L-4444
+                  </li>
+                  <li class="nav-item">
+                      <a class="" href="#">pro-foot@gmail.lu</a>
+                  </li>
+                </ul> 
+               
             </nav>
         </div>
         <div class="text-center bg-secondary">
