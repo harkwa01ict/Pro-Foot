@@ -50,3 +50,71 @@ header{
     background-color: rgb(89, 183, 187);
     border-radius: 20px;
 }
+
+************
+.newsForm{
+   
+    margin-left: 30%;
+    border: 2px solid rgb(127, 127, 221);
+    width: 500px;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(89, 183, 187);
+    border-radius: 20px;
+    
+    
+}
+.newsFormParent{
+   margin-left: 90%;
+ 
+}
+
+#newsSubmit{
+ color: rgb(87, 87, 240) ;
+ background-color: transparent;
+}
+
+.newscard{
+   
+    border: 2px solid rgb(127, 127, 221);
+    width: 500px;
+    padding: 10px ;
+
+   display: flex;
+    align-items: center;
+    
+    margin:5% 5% ;
+    
+    background-color: rgb(89, 183, 187);
+    border-radius: 20px;
+}
+
+#adminform{
+
+    color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+
+    margin-left: 800px;
+    
+
+    /*position: absolute;*/
+    
+ 
+    
+  
+
+    background-color: transparent;
+    
+}
+.titleAdmin{
+    color: white;
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    width: 600px;
+    z-index: 10;
+     
+}
