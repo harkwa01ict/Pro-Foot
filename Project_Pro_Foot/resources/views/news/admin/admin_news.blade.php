@@ -19,13 +19,15 @@
                       
                      <h5 class="card-title"><strong>{{ $item->type }}</strong></h5>
                       
-                       <p class="card-text">{{Str::limit($item->description,'17')  }}</p>
+                       <p class="card-text">{{Str::limit($item->description,'17')  }}
+                  
                        <p>Date: {{ $item->date_of_issuance }}</p>
 
                        
                              <a href="#" class="btn btn-primary">Edit</a>
                            <!-- <a href="#" class="btn btn-primary">Update</a>-->
-                            <a href="./delete_adm_news.blade.php" class="btn btn-primary">Delete</a>                          
+
+                            <a href="#" class="btn btn-primary">Delete</a>                          
                      </div>
                  </div>
               </section>

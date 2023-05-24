@@ -40,6 +40,13 @@ $user->save();
 
 return redirect()->route('route_store1')->with('success', 'News added successfully!');
 }
+
+
+
+
+
+   
+
 }
 
 

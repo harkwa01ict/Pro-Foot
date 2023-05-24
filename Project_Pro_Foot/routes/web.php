@@ -8,6 +8,7 @@ use App\Http\Controllers\TbNewsController;
 use App\Http\Controllers\ProfootController;
 use App\Http\Controllers\TbadminController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,3 +55,7 @@ Route::delete('home/news/admin/delete_adm_news/{id}', [deleteController::class,'
 
 
 //*************************************** */
+
+Route::get('/home/news/show/{id}', [TbNewsController::class, 'show_more'])->name('route_store3');
+
+

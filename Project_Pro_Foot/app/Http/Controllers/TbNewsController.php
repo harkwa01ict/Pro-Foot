@@ -61,6 +61,21 @@ public function showFilteredNews()
 
     }
 */
+
+   /* public function show_more()
+    {
+        $news = TbNews_model::all();
+
+        return view('news.show_more', compact('news'));
+    }*/
+
+
+     public function show_more(Request $request)
+    {
+        $news = TbNews_model::find($request->id);
+       return view('news.show_more', compact('news'));
+    }
+
 }
       
 
