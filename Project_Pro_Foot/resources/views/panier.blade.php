@@ -41,7 +41,7 @@
         </div>
     </article>
     <article class="mt-4 border text-center bg-light">
-    <span> <a href="{{route('route_homepage')}}">payer</a> </span>
+    <span> <a href="{{route('route_toPaniermessage')}}">payer</a> </span>
     </article>
    </section>
 @endsection

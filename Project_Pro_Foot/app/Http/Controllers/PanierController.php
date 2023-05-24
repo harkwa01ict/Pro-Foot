@@ -30,4 +30,9 @@ class PanierController extends Controller
         //dd($cart);
         return view ('Panier', compact('cart'));
     }
+
+    function get_message(){
+
+        return view ('Paniermessage');
+    }
 }
