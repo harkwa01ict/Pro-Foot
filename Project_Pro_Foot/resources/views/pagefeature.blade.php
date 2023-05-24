@@ -34,7 +34,7 @@
                     <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="{{route('route_aboutus')}}">About Us</a>
                   </li>
                   @guest
                   <li class="nav-item">

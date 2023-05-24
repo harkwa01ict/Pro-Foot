@@ -50,3 +50,11 @@ header{
     background-color: rgb(89, 183, 187);
     border-radius: 20px;
 }
+
+ .aboutusp{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 219, 219);
+    margin-top: 25px;
+  }

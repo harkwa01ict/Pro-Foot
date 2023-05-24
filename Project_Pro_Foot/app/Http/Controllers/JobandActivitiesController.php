@@ -26,4 +26,9 @@ class JobandActivitiesController extends Controller
         return view ('activities');
     }
 
+    function get_aboutus_view(){
+       
+        return view ('Aboutus');
+    }
+
 }
