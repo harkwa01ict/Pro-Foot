@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ApiController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\PanierController;
 use App\Http\Controllers\signupController;
@@ -42,3 +43,7 @@ Route::get('/home/job', [JobandActivitiesController::class, 'get_job_view'])->na
 Route::get('/home/jobs/job/{id}', [JobandActivitiesController::class, 'read_more'])->name('route_toreadmore');
 Route::get('/home/activities', [JobandActivitiesController::class, 'get_activities_view'])->name('route_activities');
 Route::get('/home/aboutus', [JobandActivitiesController::class, 'get_aboutus_view'])->name('route_aboutus');
+
+Route::get('/home/api', [ApiController::class, 'get_api'])->name('route_api');
+Route::post('/home/api', [ApiController::class, 'post']);
+Route::get('/home/api/success', [ApiController::class, 'get_apisucces'])->name('route_apisucces');

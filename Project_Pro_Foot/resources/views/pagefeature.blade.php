@@ -75,9 +75,6 @@
                   <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Ticket</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="{{route('route_activities')}}">Club Activities</a>
                 </li>
                 <li class="nav-item">
