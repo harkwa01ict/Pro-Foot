@@ -4,10 +4,14 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\deleteController;
+use App\Http\Controllers\PanierController;
 use App\Http\Controllers\signupController;
 use App\Http\Controllers\TbNewsController;
 use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\ProfootController;
+use App\Http\Controllers\TbadminController;
+use App\Http\Controllers\JobandActivitiesController;
 
 /*
 |--------------------------------------------------------------------------
