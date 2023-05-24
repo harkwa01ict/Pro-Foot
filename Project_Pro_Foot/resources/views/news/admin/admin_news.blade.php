@@ -4,11 +4,12 @@
         under the section of the content--}}
     @section('content')
 
-        <div>
+        <div class="d-flex">
 
-             @foreach ($news as $item)
-             <section class="newscard" >
-                 <div class="card" style="width: 30rem;">
+            
+             <section class="d-flex row" >
+                @foreach ($news as $item)
+                 <div class="card newscard" style="width: 30rem;">
                      <div class="card-body">
                       
                      <h5 class="card-title"><strong>{{ $item->type }}</strong></h5>
@@ -24,11 +25,12 @@
                             <a href="{{route('route_store5', ['id'=>$item->id])}}" class="btn btn-primary">Delete</a>                          
                      </div>
                  </div>
+                 @endforeach
               </section>
               
-           @endforeach
+          
 
-            <div class="newsFormParent" id="adminform">
+            <div class="signup">
                 <section class="d-flex justify-content-between flex-wrap pdancing p-5">
                    
                     <form class="newsForm" action="" method="POST">

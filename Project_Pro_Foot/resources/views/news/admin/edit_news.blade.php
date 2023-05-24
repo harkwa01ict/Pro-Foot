@@ -4,10 +4,10 @@
 
 @section('content')
 
-<div class="newsFormParent" id="adminform">
+<div class="signup" id="">
     <section class="d-flex justify-content-between flex-wrap pdancing p-5">
        
-        <form class="newsForm" action="" method="POST">
+        <form class="newsForm" action="{{route('route_store')}}" method="POST">
             @csrf
             <h2>Edit News</h2>
             <div class="mb-3">

@@ -49,16 +49,6 @@ Route::post('/home/news/admin', [TbadminController::class, 'store']);
 
 
 
-
-//********************************* */
-
-Route::get('home/news/admin/delete_adm_news/{id}', [deleteController::class,'destroy'])->name('news.destroy');
-
-/*Route::delete('home/news/admin/delete_adm_news/{id}', [deleteController::class,'destroy'])->name('news.destroy');*/
-
-
-//*************************************** */
-
 Route::get('/home/news/show/{id}', [TbNewsController::class, 'show_more'])->name('route_store3');
 
 
