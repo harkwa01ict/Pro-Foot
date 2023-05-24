@@ -22,7 +22,8 @@ class deleteController extends Controller
     
         // Redirect to a success page or return a response
         // For example:
-        return redirect()->route('news.index')->with('success', 'News item deleted successfully.');
+        return redirect()->route('news.news_index')->with('success', 'News item deleted successfully.');
     }
     
+
 }

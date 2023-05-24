@@ -4,7 +4,7 @@
 
      
         <x-card class="p-10 max-w-lg mx-auto mt-24">
-            <header class="text-center"> 
+            <!--<header class="text-center"> 
                 @foreach ($news as $item)
                     {{ $item->date_of_issuance }}
                 @endforeach
@@ -12,7 +12,7 @@
                     Edit News
                 </h2>
                 <p class="mb-4">Edit: {{$item->type}}</p>
-            </header>
+            </header>-->
             
             <form method="POST" action="{{route('news.admin.destroy',$item->id)}}">
                 @csrf

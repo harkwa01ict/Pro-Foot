@@ -24,10 +24,10 @@
                        <p>Date: {{ $item->date_of_issuance }}</p>
 
                        
-                             <a href="#" class="btn btn-primary">Edit</a>
+                             <a href="{{route('route_store4', ['id'=>$item->id])}}" class="btn btn-primary">Edit</a>
                            <!-- <a href="#" class="btn btn-primary">Update</a>-->
 
-                            <a href="#" class="btn btn-primary">Delete</a>                          
+                            <a href="{{route('route_store5', ['id'=>$item->id])}}" class="btn btn-primary">Delete</a>                          
                      </div>
                  </div>
               </section>

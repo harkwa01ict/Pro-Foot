@@ -76,6 +76,32 @@ public function showFilteredNews()
        return view('news.show_more', compact('news'));
     }
 
+    public function edit_news(Request $request)
+    {
+        $edit_news = TbNews_model::find($request->id);
+       return view('news.admin.edit_news', compact('edit_news'));
+    }
+
+    public function update(Request $request)
+    {
+        $edit_news = TbNews_model::find($request->id);
+        $input=$request->all();
+        $edit_news->update($input);
+
+       return view('news.admin.edit_news', compact('edit_news'));
+    }
+
+
+    public function destroy($id)
+    {
+        
+        //$edit_news->destroy($id);
+        edit_news::destroy($id);
+
+       //return view('news.admin.admin_news', compact('edit_news'));
+       return redirect('edit_news')->with('message','news deleted');
+    }
+
 }
       
 
