@@ -16,14 +16,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  
+
     <header>
       <section class="d-flex container-fluid justify-content-between p-3">
         <div class="logo">
             <a href="{{route('route_homepage')}}"><img src="{{asset('images/favicone.jpg')}}" alt="" width="100" height="100"></a>
             <div>
             <p>PRO-FOOT</p>
-            <span>Be Close To The Ball.</span>
+            <span class="text-white">Be Close To The Ball.</span>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg">
@@ -31,18 +31,18 @@
               <div class="collapse navbar-collapse gap-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('route_toshop')}}">Shop</a>
+                    <a class="nav-link text-white" href="{{route('route_toshop')}}">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('route_aboutus')}}">About Us</a>
+                    <a class="nav-link text-white" href="{{route('route_aboutus')}}">About Us</a>
                   </li>
                   @guest
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('route_login')}}">Log In</a>
+                    <a class="nav-link text-white" href="{{route('route_login')}}">Log In</a>
                   </li>
                   @endguest
                   <li class="nav-item">
-                    <a class="nav-link" href="{{route('route_signup')}}">Sign Up</a>
+                    <a class="nav-link text-white" href="{{route('route_signup')}}">Sign Up</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -51,7 +51,7 @@
                 </form>
                 <div class="fs-5 d-flex flex-column justify-content-center align-items-end">
                     @auth
-                        <p>{{Illuminate\Support\Facades\Auth::user()->firstname}} {{Illuminate\Support\Facades\Auth::user()->lastname}}</p>
+                        <p class="text-white">{{Illuminate\Support\Facades\Auth::user()->firstname}} {{Illuminate\Support\Facades\Auth::user()->lastname}}</p>
                         <form action="{{route('route_logout')}}" method="POST" class="">
                             @csrf
                             @method('delete')
@@ -65,9 +65,9 @@
       </section>
       <section>
         @yield('categories')
-      </section>    
+      </section>
     </header>
-    
+
     <main class="d-flex bgmain">
         <nav class="bg-success-subtle p-3">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
@@ -86,11 +86,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('route_jobpage')}}">Careers</a>
                 </li>
-    
+
               </ul>
         </nav>
         @yield('content')
-        
+
     </main>
 
 
@@ -122,7 +122,7 @@
             <nav>
                 <h3>Sponsors</h3>
 
-                
+
             </nav>
             <nav>
                 <h3>Contact Us</h3>
@@ -142,8 +142,8 @@
                   <li class="nav-item">
                       <a class="" href="#">pro-foot@gmail.lu</a>
                   </li>
-                </ul> 
-               
+                </ul>
+
             </nav>
         </div>
         <div class="text-center bg-secondary">

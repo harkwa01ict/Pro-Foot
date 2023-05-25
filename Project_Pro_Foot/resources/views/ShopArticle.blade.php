@@ -3,7 +3,7 @@
 
 @section('categories')
 <nav class="navbar-expand-lg d-flex justify-content-center ">
-    <ul class="navbar-nav fs-5 gap-5">
+    <ul class="navbar-nav fs-5 gap-5 text-white">
         @foreach ($categories as $category)
         <li class="nav-item">
             <a class="nav-link" href="{{route('route_toshopCategory', ['id'=>$category->id])}}">{{$category->category}}</a>
@@ -24,7 +24,7 @@
         </div>
       <div class="d-flex row p-3 col-md-3">
         <div class="text-white">
-          <h1>prix : </h1>
+          <h1>Price : </h1>
           <h1>{{$produits->amount}}$</h1>
         </div>
         <div class="text-white">
@@ -35,10 +35,10 @@
         <div class="p-3">
             <form action="{{route('route_toshopaddpanier', ['id'=>$produits->id])}}" method="POST" id="addpanier">
                 @csrf
-                <label for="nombre" class="text-white">Nombre d'article : </label>
+                <label for="nombre" class="text-white">Number of Article: </label>
                 <input type="number" name="nombre" min="1">
                 <br><br>
-                <label for="taille" class="text-white">Taille : </label>
+                <label for="taille" class="text-white">Size : </label>
                 <select class="form-select" aria-label="Default select example" name="taille">
                     <option value="xx-l">xx-l</option>
                     <option value="xl">xl</option>
@@ -49,7 +49,7 @@
                     <option value="xx-s">xx-s</option>
                 </select>
                 <br>
-                <label for="couleur" class="text-white">couleur : </label>
+                <label for="couleur" class="text-white">Color : </label>
                 <select class="form-select" aria-label="Default select example" name="couleur">
                     <option value="blue">Blue</option>
                     <option value="red">red</option>
@@ -62,11 +62,11 @@
                 </select>
             </form>
         </div>
-          <button class="" type="submit" form="addpanier"><i class="fa-solid fa-cart-shopping"></i> <br> ajouter au panier</button>
+          <button class="" type="submit" form="addpanier"><i class="fa-solid fa-cart-shopping"></i> <br>Add To Cart</button>
       </div>
     </div>
       <div class="d-flex gap-3 mt-5 p-5">
-          @foreach ($articleexpo as $produit) 
+          @foreach ($articleexpo as $produit)
           <div class="col p-5">
             <div class="card shadow-sm p-5">
               <img class="bd-placeholder-img card-img-top" width="100%" height="325" src="{{asset($produit->image)}}" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">

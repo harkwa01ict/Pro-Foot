@@ -22,7 +22,7 @@ class ProfootController extends Controller
      }
 
      function shopArticle(Request $request){
-       
+
       $produits = ShopModel::find($request->id);
       //dd($produits);
       $articleexpo = ShopModel::inRandomOrder()->limit(3)->get();
@@ -33,7 +33,7 @@ class ProfootController extends Controller
      }
 
      function shopCategory(Request $request){
-       
+
      $shopcategories = ShopModel::where('category_id', $request->id)->paginate(9);
       return view('ShopCategories', compact('shopcategories'));
 

@@ -6,7 +6,7 @@
        <h2>
            Food Ball Menu
        </h2>
-       <p class="">
+       <p class="text-warning">
            Welcome to our Pro-Foot Restaurant.
            Enjoy !
        </p>
@@ -15,7 +15,7 @@
        <li data-filter=".All">All</li>
        <li data-filter=".Featured">Featured</li>
        <li data-filter=".Special">Today's Special</li>
-       <li data-filter=".Arrivals">New arrivals</li>  
+       <li data-filter=".Arrivals">New arrivals</li>
       </div>
 
 
